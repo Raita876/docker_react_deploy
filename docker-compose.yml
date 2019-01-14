@@ -1,0 +1,8 @@
+version: '2'
+services:
+  react-nginx:
+    image: nginx:latest
+    ports: 
+      - 8888:80
+    volumes:
+      - ./sample_app:/usr/share/nginx/html
